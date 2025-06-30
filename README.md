@@ -15,7 +15,7 @@ MappingValidator is a lightweight and powerful validation tool that detects miss
 
 Reference the project as a DLL or add it via NuGet:
 
-    dotnet add package MappingValidator
+    MappingValidator
 
 ### 🛠️ Usage
 
