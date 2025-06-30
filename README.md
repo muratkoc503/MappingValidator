@@ -2,7 +2,7 @@
 
 MappingValidator is a lightweight and powerful validation tool that detects missing fields in mappings between source and destination objects without relying on an external mapping library.
 
-(Currently Test in .Net 9)
+**Dependency:** .NET 9
 
 ### ✨ Features
 
