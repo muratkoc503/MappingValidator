@@ -1,0 +1,11 @@
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\bin\Release\net9.0\MappingValidator.deps.json
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\bin\Release\net9.0\MappingValidator.dll
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\bin\Release\net9.0\MappingValidator.pdb
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\MappingValidator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\MappingValidator.AssemblyInfoInputs.cache
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\MappingValidator.AssemblyInfo.cs
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\MappingValidator.csproj.CoreCompileInputs.cache
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\MappingValidator.dll
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\refint\MappingValidator.dll
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\MappingValidator.pdb
+C:\Users\murat\source\repos\MappingValidator\MappingValidator\obj\Release\net9.0\ref\MappingValidator.dll

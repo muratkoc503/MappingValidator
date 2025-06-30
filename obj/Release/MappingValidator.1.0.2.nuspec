@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MappingValidator</id>
+    <version>1.0.2</version>
+    <authors>Murat KOÇ</authors>
+    <description>Mapping validation helper library.</description>
+    <tags>mapping validation</tags>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net9.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\murat\source\repos\MappingValidator\MappingValidator\bin\Release\net9.0\MappingValidator.dll" target="lib\net9.0\MappingValidator.dll" />
+  </files>
+</package>

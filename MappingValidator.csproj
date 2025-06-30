@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<PackageId>MappingValidator</PackageId>
+	<Version>1.0.2</Version>
+	<Authors>Murat KOÇ</Authors>
+	<Description>Mapping validation helper library.</Description>
+	<PackageTags>mapping validation</PackageTags>
+  </PropertyGroup>
+
+</Project>
