@@ -34,6 +34,7 @@ Reference the project as a DLL or add it via NuGet:
     }
 
 #### 2. Configuration Class
+    @using MappingValidator
 
     public static class MappingValidatorConfigurations
     {
@@ -51,6 +52,7 @@ Reference the project as a DLL or add it via NuGet:
     MappingValidator.Configure<Source, Destination>();
 
 #### 4. Application Usage
+    @using MappingValidator
 
     try
     {
