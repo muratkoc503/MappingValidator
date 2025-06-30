@@ -1,23 +1,23 @@
 ## MappingValidator
 
-MappingValidator, harici bir eşleme (mapping) kütüphanesine bağımlı olmadan kaynak (source) ve hedef (destination) objeler arasında yapılan eşlemelerde eksik set edilen alanları tespit eden hafif ve güçlü bir doğrulama aracıdır.
+MappingValidator is a lightweight and powerful validation tool that detects missing fields in mappings between source and destination objects without relying on an external mapping library.
 
-### ✨ Özellikler
+### ✨ Features
 
-- Eşleme kütüphanelerinden bağımsız çalışır (AutoMapper, Mapster, manuel mapping vs.)
-- Hedef nesnede otomatik veya manuel olarak set edilmemiş alanları tespit eder
-- Özelleştirilebilir Ignore listesi ile belirli alanlar hariç tutulabilir
-- Konfigürasyonlar tip çiftine göre (TSource, TDestination) saklanır ve yeniden kullanılabilir
+- Works independently of mapping libraries (AutoMapper, Mapster, manual mapping, etc.)
+- Detects fields that are not automatically or manually set in the target object
+- Excludes specific fields with a customizable Ignore list
+- Configurations are stored and reused by type pair (TSource, TDestination)
 
-### 🚀 Kurulum
+### 🚀 Installation
 
-DLL olarak projeye referans verin ya da NuGet üzerinden ekleyin:
+Reference the project as a DLL or add it via NuGet:
 
-    dotnet add package MappingValidator
+dotnet add package MappingValidator
 
-### 🛠️ Kullanım
+### 🛠️ Usage
 
-#### 1. Örnek Model Tanımları
+#### 1. Example Model Definitions
 
     public class Source
     {
@@ -33,7 +33,7 @@ DLL olarak projeye referans verin ya da NuGet üzerinden ekleyin:
         public string CreatedBy { get; set; }
     }
 
-#### 2. Konfigürasyonu Sınıfı
+#### 2. Configuration Class
 
     public static class MappingValidatorConfigurations
     {
@@ -46,11 +46,11 @@ DLL olarak projeye referans verin ya da NuGet üzerinden ekleyin:
         }
     }
 
-#### 3. Konfigürasyonu Program.cs dosyasına Ekle
+#### 3. Add Configuration to Program.cs
 
     MappingValidator.Configure<Source, Destination>();
 
-#### 4. Uygulama Kullanımı
+#### 4. Application Usage
 
     try
     {
@@ -69,18 +69,16 @@ DLL olarak projeye referans verin ya da NuGet üzerinden ekleyin:
         Console.WriteLine($"Error: {ex.Message}");
     }
 
-Eğer CreatedBy alanı set edilmez ve Ignore listesine de eklenmemişse:
+If the CreatedBy field is not set and is not added to the Ignore list:
 
 > ** ValidationException:** Required fields not set on Destination: CreatedBy
 
+##### 🎯 When to Use?
 
+- If there are fields that need to be filled in the target object after mapping
+- If it is desired to detect missing assignments in mapping operations such as AutoMapper, Mapster, Mapperly
+- If it is aimed to prevent missing data from going to the database
 
-##### 🎯 Ne Zaman Kullanılır?
-
-- Mapping sonrası hedef nesnede doldurulması gereken alanlar varsa
-- AutoMapper, Mapster, Mapperly gibi mapping işlemlerinde eksik atamaları tespit etmek isteniyorsa
-- Veritabanına eksik veri gitmesini önlemek amaçlanıyorsa
-
-📄 Lisans
+📄 License
 
 MIT
