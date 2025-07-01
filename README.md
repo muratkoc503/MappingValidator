@@ -51,7 +51,7 @@ Reference the project as a DLL or add it via NuGet:
 
 #### 3. Add Configuration to Program.cs
 
-    MappingValidator.Configure<Source, Destination>();
+    MapValidator.Configure<Source, Destination>();
 
 #### 4. Application Usage
     @using MappingValidator
