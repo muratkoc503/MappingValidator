@@ -42,7 +42,7 @@ Reference the project as a DLL or add it via NuGet:
     {
         public static void RegisterAll()
         {
-            MappingValidator.Configure<Source, Destination>(builder =>
+            MapValidator.Configure<Source, Destination>(builder =>
             {
                 builder.Ignore(dest => dest.CreatedBy);
             });
@@ -64,7 +64,7 @@ Reference the project as a DLL or add it via NuGet:
         entity.Role = "Admin";
         //entity.CreatedBy = "murat.koc";
     
-        MappingValidator.Validate<Source, Destination>(entity);
+        MapValidator.Validate<Source, Destination>(entity);
     
         Console.WriteLine("All manual fields set successfully!");
     }
